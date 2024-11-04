@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b0b19b;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #a0a991;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(3, 8, 5, 0.4);
+}
+
+.header h1 {
+    color: black;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.logo {
+    height: 80px;
+    width: auto;
+}
+
+.upload-section, .search-section {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upload-label {
+    padding: 8px;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+input[type="file"], input[type="text"] {
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(3, 8, 5, 0.4);
+    border: 1px solid #6f3f57;
+    margin-right: 10px;
+}
+
+button {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(3, 8, 5, 0.4);
+    background-color: #5a8f55;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4d7748;
+}
+
+.result {
+    margin-top: 10px;
+    background-color: #f9f5f5;
+    padding: 4px;
+    border: 5px;
+    border-radius: 5px;
+    min-height: 100px;
+    font-size: 16px;
+    color: #333;
+}
+
+.green-text {
+    color: #9d7758;
+}

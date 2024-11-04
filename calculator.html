@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income Tax Calculator of 75BN BSF</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="papaparse.min.js"></script>
+    <script src="xlsx.full.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="bsf-logo.png" alt="BSF Logo" class="logo">
+            <h1>INCOME TAX CALCULATOR OF 75BN BSF</h1>
+            <img src="bsf-logo.png" alt="BSF Logo" class="logo">
+        </div>
+        
+        <div class="upload-section">
+            <label class="upload-label">Select CSV File</label>
+            <input type="file" id="csvFile" accept=".csv">
+            <button onclick="uploadFile()">Upload File</button>
+        </div>
+        
+        <div class="search-section" style="display: flex; align-items: center;">
+            <input type="text" id="searchInput" placeholder="Search by Regt. No." onkeyup="search()">
+            <button onclick="exportToExcel()" style="margin-left: 10px;">Export to Excel</button>
+        </div>
+        
+        <div class="result" id="result">
+            <!-- Results will be displayed here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
